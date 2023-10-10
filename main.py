@@ -1,5 +1,6 @@
 # не зміню наступну строку
-username = input ()
+username = input("Enter your username: ")
+
 
 # пиши свій код починаючи з 5 строчки ->
 if len(username) >= 3 and len(username) <= 15  and '!' not in username and '@' not in username:
