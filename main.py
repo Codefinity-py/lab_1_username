@@ -2,16 +2,8 @@
 username = input ()
 
 # пиши свій код починаючи з 5 строчки ->
-def validate_username(username):
-    if 3 <= len(username) <= 15 and '!' not in username and '@' not in username:
-        return True
-    else:
-        return False
+if len(username) >= 3 and len(username) <= 15  and '!' not in username and '@' not in username:
+    print(Username is valid)
 
-# Приклад використання
-username = input("Введіть username: ")
-
-if validate_username(username):
-    print("Введений username є допустимим.")
-else:
-    print("Введений username не відповідає вимогам.")
+else :
+    print ("Please, enter username from 3 to 15 characters and don't use ! or @")
